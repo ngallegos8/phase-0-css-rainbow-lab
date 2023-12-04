@@ -25,7 +25,7 @@ describe("main.css", () => {
     expect(rule, "Missing #red rule").to.exist;
 
     const hint = "Incorrect border-top-color property for #red";
-    expect(rule.style["border-top-color"], hint).to.eq("#f00");
+    expect(rule.style["border"], hint).to.eq("20px solid #f00");
   });
 
   it("sets #orange div border-top-color to #ffa500", () => {
@@ -33,7 +33,7 @@ describe("main.css", () => {
     expect(rule, "Missing #orange rule").to.exist;
 
     const hint = "Incorrect border-top-color property for #orange";
-    expect(rule.style["border-top-color"], hint).to.eq("#ffa500");
+    expect(rule.style["border"], hint).to.eq("20px solid #ffa500");
   });
 
   it("sets #yellow div border-top-color to #ff0", () => {
@@ -41,7 +41,7 @@ describe("main.css", () => {
     expect(rule, "Missing #yellow rule").to.exist;
 
     const hint = "Incorrect border-top-color property for #yellow";
-    expect(rule.style["border-top-color"], hint).to.eq("#ff0");
+    expect(rule.style["border"], hint).to.eq("20px solid #ff0");
   });
 
   it("sets #green div border-top-color to #00bc3f", () => {
@@ -49,7 +49,7 @@ describe("main.css", () => {
     expect(rule, "Missing #green rule").to.exist;
 
     const hint = "Incorrect border-top-color property for #green";
-    expect(rule.style["border-top-color"], hint).to.eq("#00bc3f");
+    expect(rule.style["border"], hint).to.eq("20px solid #00bc3f");
   });
 
   it("sets #blue div border-top-color to #06f", () => {
@@ -57,7 +57,7 @@ describe("main.css", () => {
     expect(rule, "Missing #blue rule").to.exist;
 
     const hint = "Incorrect border-top-color property for #blue";
-    expect(rule.style["border-top-color"], hint).to.eq("#06f");
+    expect(rule.style["border"], hint).to.eq("20px solid #06f");
   });
 
   it("sets #indigo div border-top-color to #8a2be2", () => {
@@ -65,7 +65,7 @@ describe("main.css", () => {
     expect(rule, "Missing #indigo rule").to.exist;
 
     const hint = "Incorrect border-top-color property for #indigo";
-    expect(rule.style["border-top-color"], hint).to.eq("#8a2be2");
+    expect(rule.style["border"], hint).to.eq("20px solid #8a2be2");
   });
 
   it("sets #violet div border-top-color to #d300c9", () => {
@@ -73,6 +73,6 @@ describe("main.css", () => {
     expect(rule, "Missing #violet rule").to.exist;
 
     const hint = "Incorrect border-top-color property for #violet";
-    expect(rule.style["border-top-color"], hint).to.eq("#d300c9");
+    expect(rule.style["border"], hint).to.eq("20px solid #d300c9");
   });
 });
